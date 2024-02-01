@@ -11,7 +11,7 @@ our research question is: To what extent does the location of the initial outbre
 diverse neighborhoods based on their connectivity and density? The results of this study give an insight into the dynamics of bed bug infestations 
 in different neighborhoods, which is informative for future studies on determining appropriate measures for infestation control and spread.
 
-## How the Code Works:
+## How the Code Operates:
 Each node has a state, it can be either infected (state = 1) or susceptible (state = 0). Additionally, the simulation is set to run for 100 time steps, where each time step represents 2 days. To determine how the nodes are infected, there is 
 a rule that states that the more infected neighbors one node has, the higher the probability of infection for this node will be. 
 Each node can either be aware or unaware, all the newly infected nodes begin with an awareness probability of 0.05 assuming that the bed bugs are hard 
@@ -30,3 +30,9 @@ To make the model more realistic we add some rules based on the financial status
 - For below-average nodes that are assigned the professional treatment we introduce a cool-down period, where the nodes are only allowed to use the professional treatment every 15 time steps. During the cool-down period, they make use of the DIY treatment until they either manage to get rid of the infection or they can afford the professional treatment again.
 - For the above-average nodes that are assigned the DIY treatment, they change to the professional treatment after the first failed treatment attempt. 
 
+## How to Run the Code:
+The code was created and edited on google colab, but it can also be ran in a jupyter kernal. The output of the code was left in the notebook, but it can 
+be cleared and ran again with different parameters if needed. The code is ran with different scenarios to which changes can be made.
+
+## Licence:
+Released under MIT Licence
