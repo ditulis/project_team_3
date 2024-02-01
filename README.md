@@ -34,5 +34,5 @@ To make the model more realistic we add some rules based on the financial status
 The code was created and edited on google colab, but it can also be ran in a jupyter kernal. The output of the code was left in the notebook, but it can 
 be cleared and ran again with different parameters if needed. The code is ran with different scenarios to which changes can be made.
 
-## Licence:
-Released under MIT Licence
+## License:
+Released under [MIT License](https://github.com/ditulis/project_team_3/tree/main?tab=MIT-1-ov-file)
