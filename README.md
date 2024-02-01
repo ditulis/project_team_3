@@ -1,0 +1,33 @@
+# Project Computational Science
+## Dynamic Modeling of Bed Bug Spreading: A Scale-Free Network Simulation for Community-Integrated Pest Management Strategies
+### Contributors:
+- Dita Arklina
+- Maria Mshalwat
+- Xuening Tang
+## Project Description
+This project aims to study the impact of treatment costs, neighborhood density, and connectivity on the prevalence of bed bugs across economically 
+diverse neighborhoods. We also examine the influence of initial site of infestations on the spread within and between such neighborhoods. Thus, 
+our research question is: To what extent does the location of the initial outbreak influence the prevalence of bed bug infestations in economically 
+diverse neighborhoods based on their connectivity and density? The results of this study give an insight into the dynamics of bed bug infestations 
+in different neighborhoods, which is informative for future studies on determining appropriate measures for infestation control and spread.
+
+## How the Code Works:
+Each node has a state, it can be either infected (state = 1) or susceptible (state = 0). To determine how the nodes are infected, there is 
+a rule that states that the more infected neighbors one node has, the higher the probability of infection for this node will be. 
+Each node can either be aware or unaware, all the newly infected nodes begin with an awareness probability of 0.05 assuming that the bed bugs are hard 
+to detect in the earlier days of the infection. The longer the nodes are infected the higher the chance of detecting the infection will be, therefore 
+after each time step where the nodes are still found unaware the awareness probability increases by 0.05 so that in the following time step the chance 
+of detection is higher. 
+
+To determine the treatment method that each node will end up choosing, we make use of different probabilities based on the financial status of the nodes. 
+We base our probabilities mostly on educational guesses since we can not find real-life data to support the assumptions. For the below-average, we assume 
+that the majority of the nodes will go for the DIY treatment as they most likely will not be able to afford the Pro treatment, while the majority of the 
+above-average nodes will choose to do the Pro treatment. Based on these probability, we assign each newly infected node a treatment method for its infection
+period, that being said, the node is allowed to test the effectiveness of the method, at every time step until the treatment works and the node is susceptible 
+again. Once newly infected, the node gets assigned a new treatment method, going through the probability test all over again.
+
+To make the model more realistic we add some rules based on the financial status of the nodes. For below-average nodes that are assigned the Pro treatment, 
+we introduce a cool-down period, where the nodes are only allowed to use the Pro treatment every 15 time steps, which corresponds to 30 days. During the cool-down 
+period, they make use of the DIY treatment until they can afford the Pro treatment again. For the above-average nodes that are assigned the DIY treatment, they change
+to the Pro treatment after the first failed treatment. 
+
