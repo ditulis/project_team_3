@@ -31,8 +31,10 @@ To make the model more realistic we add some rules based on the financial status
 - For the above-average nodes that are assigned the DIY treatment, they change to the professional treatment after the first failed treatment attempt. 
 
 ## How to Run the Code:
-The code was created and edited on google colab, but it can also be ran in a jupyter kernal. The output of the code was left in the notebook, but it can 
-be cleared and ran again with different parameters if needed. The code is ran with different scenarios to which changes can be made.
+The code was created and edited on google colab, but it can also be ran in a jupyter kernel. There are two files, [bedbug_model]() and [visualization_bedbug_model](), bedbug_model is the main model, where the simulation is executed, and visualisation_bedbug_model is where the network was visualized on a smaller scale for the 
+presentation poster of this project.
+The output of the code was left in the notebook, but it can 
+be cleared and ran again with different parameters if needed. The code is ran with different scenarios to which changes can be made. 
 
 ## License:
 Released under [MIT License](https://github.com/ditulis/project_team_3/tree/main?tab=MIT-1-ov-file)
