@@ -1,9 +1,9 @@
 # Project Computational Science
 ## Dynamic Modeling of Bed Bug Spreading: A Scale-Free Network Simulation for Community-Integrated Pest Management Strategies
 ### Contributors:
-- Dita Arklina
-- Maria Mshalwat
-- Xuening Tang
+- Dita Arklina (University of Amsterdam)
+- Maria Mshalwat (Vrije Universiteit)
+- Xuening Tang (University of Amsterdam)
 ## Project Description
 This project aims to study the impact of treatment costs, neighborhood density, and connectivity on the prevalence of bed bugs across economically 
 diverse neighborhoods. We also examine the influence of initial site of infestations on the spread within and between such neighborhoods. Thus, 
